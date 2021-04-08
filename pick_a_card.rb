@@ -22,6 +22,7 @@ while !user_cards.empty? && !computer_cards.empty?
   puts ""
   puts "User - #{user_cards[0]} vs #{computer_cards[0]} - Computer" 
   puts ""
+  
   if STANDARD_OF_CARDS.rindex(user_cards[0]) > STANDARD_OF_CARDS.rindex(computer_cards[0])
     user_cards.push(computer_cards.delete_at(0))
     user_cards.push(user_cards.delete_at(0))
