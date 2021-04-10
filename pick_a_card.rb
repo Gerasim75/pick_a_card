@@ -15,14 +15,14 @@ while !user_cards.empty? && !computer_cards.empty?
 
   while STDIN.gets != "\n"
   end
-  system 'clear' 
+  system 'clear'
   puts "You have card (#{user_cards.size})       - #{user_cards}"
-  puts ""
+  puts
   puts "Computer have card (#{computer_cards.size})  - #{computer_cards}"
-  puts ""
-  puts "User - #{user_cards[0]} vs #{computer_cards[0]} - Computer" 
-  puts ""
-  
+  puts
+  puts "User - #{user_cards[0]} vs #{computer_cards[0]} - Computer"
+  puts
+
   if STANDARD_OF_CARDS.rindex(user_cards[0]) > STANDARD_OF_CARDS.rindex(computer_cards[0])
     user_cards.push(computer_cards.delete_at(0))
     user_cards.push(user_cards.delete_at(0))
@@ -38,6 +38,6 @@ end
 
 if user_cards.size.zero?
   puts "You're the loser!"
-else 
+else
   puts "You are the winner!"
 end
